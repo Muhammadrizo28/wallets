@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": "58db",
+      "email": "user@gmail.com",
+      "name": "John",
+      "surname": "Smith",
+      "password": "user"
+    }
+  ],
+  "wallets": [
+    {
+      "id": "58db",
+      "name": "visa",
+      "balance": 454,
+      "number": 3966555566,
+      "holder_name": "John",
+      "holder_surname": "Smith"
+    },
+    {
+      "id": "58db",
+      "name": "visa",
+      "balance": 459,
+      "number": 3966555566,
+      "holder_name": "John",
+      "holder_surname": "Smith"
+    },
+    {
+      "id": "58db",
+      "balance": 0,
+      "name": "Mastercard",
+      "holder_name": "John",
+      "number": 3966555566,
+      "holder_surname": "Smith"
+    },
+    {
+      "id": "58db",
+      "balance": 40,
+      "name": "visa",
+      "holder_name": "John",
+      "number": 34543226,
+      "holder_surname": "Smith"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "58db",
+      "card_name": "LOREM",
+      "time": "15:28",
+      "category": "avto",
+      "amount": "60000"
+    },
+    {
+      "id": "58db",
+      "card_name": "MASTERCARD",
+      "time": "16:00",
+      "category": "lorem",
+      "amount": "200000000"
+    }
+  ]
+}

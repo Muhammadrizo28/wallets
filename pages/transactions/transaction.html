@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="transaction.css">
+    <link rel="stylesheet" href="/modules/ui.css">
+</head>
+<body>
+
+    <div class="cont">
+
+        <header></header>
+
+        <p class="choose_card">Выберите карту</p>
+
+        <div class="cards_box1"></div>
+        
+        
+        <button class="button_add_transaction">Добавить транзакцию</button>
+        <table >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Отправленно с кошелька</th>
+                    <th>Категория</th>
+                    <th>Сумма транзакции</th>
+                    <th>Когда</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="box_add_transaction">
+
+            <form class="form_add_transaction">
+                
+                <input class="input_add_transaction" type="text" placeholder="Категория" name="category">
+                <input class="input_add_transaction" type="text" placeholder="Сумма" name="amount">
+
+                <span class="card_name1"></span>
+
+                <button class="add_transaction"></button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    
+    <script type="module" src="transaction.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+.cont {
+  
+    width: 1530px;
+    height: 783px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+  
+}
+
+
+table {
+
+    border-collapse: collapse;
+    width: 72%;
+    position: absolute;
+    top: 120px;
+    left: 200px;
+   
+}
+th, td {
+    border-bottom: 1px solid black; /* Горизонтальные линии */
+    padding: 8px;
+    text-align: left;
+    padding: 10px ;
+    font-weight: 700;
+}
+
+/* Скрытие вертикальных линий */
+td:not(:last-child),
+th:not(:last-child) {
+    border-right: none;
+}
+
+th {
+
+    opacity: 0.6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.button_add_transaction {
+
+    width: 180px;
+    height: 50px;
+    background-color: #0047FF;
+    color: white;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    position: fixed;
+}
+
+.box_add_transaction {
+
+
+    width: 390px;
+    height: 160px;
+    background-color: #d7d5d5;
+    position: relative;
+    left: 910px;
+    top: 735px;
+    border-radius: 10px;
+    opacity: 0;
+
+}
+
+.form_add_transaction {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+}
+
+.input_add_transaction {
+
+    width: 80%;
+    height: 32px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-top: 25px;
+
+}
+
+.choose_card {
+
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    left: 600px;
+    top: 90px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    display: none;
+}
+
+.card_name1 {
+
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    font-weight: 700;
+}
+
+.cards_box1 {
+
+    width: 1150px;
+    height: 365px;
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: relative;
+    left: 190px;
+    top: 120px;
+    overflow-y: auto;
+    display: none;
+
+}
+
+.cards_box1::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cards_box1::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.cards_box1::-webkit-scrollbar-thumb {
+    background-color: #b2b2b2; 
+    border-radius: 10px;
+}
+
+.add_transaction {
+
+
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: rgb(250, 250, 250, 0.6);
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    background-image: url(/public/check-regular-36.png);
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.transaction_animation {
+
+    animation: box_top 1s forwards;
+}
+
+
+@keyframes box_top {
+
+    from {
+
+        top: 640px;
+        opacity: 0;
+
+    }
+
+    to {
+
+        top: 535px;
+        display: block;
+        opacity: 1;
+
+    }
+}
+
+
+
+
+
+.transaction_animation2 {
+
+    animation: box_top2 1s forwards;
+}
+
+
+@keyframes box_top2 {
+
+    from {
+
+        top: 535px;
+        opacity: 1;
+
+    }
+
+    to {
+
+        top: 640px;
+        opacity: 0;
+        display: none;
+
+    }
+}
+
+
+
+

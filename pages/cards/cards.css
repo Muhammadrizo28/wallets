@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+.cont {
+  
+    width: 1530px;
+    height: 783px;
+    margin: 0 auto;
+  
+}
+
+.cards_box2 {
+
+    width: 1150px;
+    height: 360px;
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: relative;
+    left: 190px;
+    top: 78px;
+    overflow-y: auto;
+
+}
+
+.cards_box2::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cards_box2::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.cards_box2::-webkit-scrollbar-thumb {
+    background-color: #b2b2b2; 
+    border-radius: 10px;
+}
+body {
+
+    overflow: hidden;
+}
+
+.card {
+
+    width: 300px !important;
+    height: 160px !important;
+}
+
+.add_card {
+
+    width: 200px;
+    height: 45px;
+    background-color:  #0047FF;
+    border: none;
+    position: absolute;
+    left: 190px;
+    bottom: 170px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.add_card2 {
+
+    width: 140px;
+    height: 32px;
+    background-color: #0047FF;
+    border: none;
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.add_card_box {
+
+    width: 500px;
+    height: 200px;
+    background-color: #d7d5d5;
+    position: relative;
+    left: 400px;
+    top: 375px;
+    border-radius: 10px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.move {
+
+    animation: top 1s forwards;
+}
+
+.move2 {
+
+    animation: top2 1s forwards;
+
+}
+
+
+.add_card_input {
+
+    width: 70%;
+    height: 45px;
+    background-color: white;
+    border: none;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+@keyframes top {
+
+
+    to {
+
+        top: 150px;
+        opacity: 1;
+
+    }
+}
+
+
+
+
+@keyframes top2 {
+
+    from {
+
+        top: 150px;
+        opacity: 1;
+    }
+
+
+    to {
+
+        top: 375px;
+        opacity: 0;
+        display: none;
+
+    }
+}
+
+
+
